@@ -34,7 +34,7 @@ class Dependencies {
 			function( Container $container ): View {
 				return new View(
 					dirname( __DIR__, 2 ) . '/public/view',
-					dirname( __DIR__, 2 ) . '/public/view/cache',
+					dirname( __DIR__, 2 ) . '/temp/cache',
 					BladeOne::MODE_DEBUG
 				);
 			}
