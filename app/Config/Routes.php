@@ -17,8 +17,7 @@ class Routes {
 	 * @return \Slim\App
 	 */
 	public static function add( App $app ): App {
-		$app->get( '/admin', array( HomeController::class, 'index' ) );
-		$app->get( '/login', array( AuthController::class, 'login' ) );
+		$app->get( '/', array( HomeController::class, 'index' ) );
 		return $app;
 	}
 }
