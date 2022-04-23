@@ -13,6 +13,7 @@ class View {
 
 	public function __construct( string $viewPath, string $cachePath, int $mode = BladeOne::MODE_AUTO ) {
 		$this->blade = new BladeOne( $viewPath, $cachePath, $mode );
+		$this->blade->setBaseUrl( 'https://update_server.gq/' );
 	}
 
 	public function render( $template, $data = array() ) {
